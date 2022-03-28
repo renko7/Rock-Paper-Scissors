@@ -28,15 +28,21 @@ img {
     --clr-testing: red;
 }
 
-.wrapper {
-    max-width: 376px;
-    margin: 0 auto;
-}
-
 body {
     background: var(--clr-background);
     font-family: 'Barlow Semi Condensed', sans-serif;
     color: white;
+    margin: 0;
+}
+
+.wrapper {
+    max-width: 376px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
 }
 
 /* HEADER SECTION */
@@ -47,9 +53,9 @@ section.header {
     align-items: center;
     border: 2px solid var(--clr-neutral-header-outline);
     border-radius: 7px;
-    max-width: 375px;
-    margin: 0 auto;
+    min-width: 375px;
     padding: 0.5em 0.625em;
+    margin: 0;
 }
 
 /* HEADER SECTION, TEXT AREA */
@@ -115,7 +121,22 @@ section.content .rock .container {
     background: var(--clr-primary-rock);
 }
 
+section.content .rock {
+    align-self: flex-end;
+}
+
+
 section.content .scissors .container {
     background: var(--clr-primary-scissors);
 }
 
+/* RULES SECTION */
+
+section.rules a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 0.4em 1em;
+    border-radius: 7px;
+    border: 1px solid;
+}

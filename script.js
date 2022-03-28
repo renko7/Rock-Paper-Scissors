@@ -51,3 +51,12 @@ function playGame(rounds) {
 
 
 playGame(5)
+
+const hand = document.querySelector("div.paper")
+print(hand)
+
+function changeColor(e) {
+    this.style.background = 'green'
+}
+
+hand.addEventListener('mouseOver', () => hand.classList.add('green-background'))
