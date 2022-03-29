@@ -77,7 +77,7 @@ section.header .text {
 section.header .score-counter {
     text-align: center;
     background-color: white;
-    width: 28%;
+    width: 40%;
     border-radius: 4px;
 }
 
@@ -87,7 +87,7 @@ section.header .score-counter {
 
 section.header .score-counter .score {
     color: var(--clr-neutral-dark-text);
-    font-size: 2rem;
+    font-size: 1rem;
     margin: 0;
     text-align: center;
 }
@@ -138,9 +138,9 @@ section.content .scissors .container {
     transform: scale(1.1)
 }
 
-/* COMPUTER CHOICE SECTION */
+/* RESULTS SECTIONS */
 
-section.computer p.choice {
+section.result p {
     font-size: 1.8rem;
     margin: 0;
     text-align: center;
