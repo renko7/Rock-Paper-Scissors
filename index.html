@@ -2,10 +2,69 @@
 <html lang="en">
     <head>
         <meta charset = "UTF-8">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+        <title>Rock Paper Scissors</title>
     </head>
 
     <body>
+        <div class="wrapper">
+            <section class="header">
+                <div class="text">
+                    <ul>
+                        <li>ROCK</li>
+                        <li>PAPER</li>
+                        <li>SCISSORS</li>
+                    </ul>
+                </div>
+                <div class="score-counter">
+                    <p>SCORE</p>
+                    <p class="score">Player: <span class="player">0</span></p>
+                    <p class="score">Computer: <span class="computer">0</span></p>
+                </div>
+            </section>
 
+            <section class="content">
+                
+                <div class="paper">
+                    <div class="container grow">
+                        <div class="option">
+                            <img src="./assets/svg/icon-paper.svg" alt="paper">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rock">
+                    <div class="container grow">
+                        <div class="option">
+                            <img src="./assets/svg/icon-rock.svg" alt="rock">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scissors">
+                    <div class="container grow">
+                        <div class="option">
+                            <img src="./assets/svg/icon-scissors.svg" alt="scissors">
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="result">
+                <div class="container">
+                    <p></p>
+                </div>
+            </section>
+
+            <section class="rules">
+                <a href="#">RULES</a>
+            </section>
+
+        </div>
         <script src="./script.js"></script>
     </body>
 </html>
